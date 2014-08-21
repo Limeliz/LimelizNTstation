@@ -163,8 +163,8 @@ var/global/list/autolathe_recipes_emagged = list( \
 		var/datum/effect/effect/system/spark_spread/s = new /datum/effect/effect/system/spark_spread
 		s.set_up(5, 1, src)
 		s.start()
-		user << "You short out the [src]'s circuit board, enabling debug mode."
-		visible_message("\red BZZzZZzZZzZT")
+		user << "<span class=\"alert\">You short out the [src]'s circuit board, enabling debug mode.</span>"
+		visible_message("<span class=\"alert\">BZZzZZzZZzZT</span>")
 		return
 
 	if (src.m_amount + O.m_amt > max_m_amount)
